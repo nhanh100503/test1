@@ -767,3 +767,61 @@ transition: top 0.5s ease-in-out;
   /* padding: 1rem 0; */
   color: orange;
 }
+
+
+.packages .box-container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: nowrap;
+  gap: 2rem;
+  /* justify-content: space-between;
+  align-items: center; */
+  padding: 20px;
+}
+
+.packages .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.packages .box-container .box img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  /* align-items: center;
+  justify-content: center; */
+  display: block;
+  margin: auto;
+}
+.packages .box-container .box .content {
+  padding: 2rem;
+}
+.packages .box-container .box .content h3 {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+.packages .box-container .box .content h3 i {
+  color: #ffa500;
+}
+.packages .box-container .box .content p {
+  font-size: 1rem;
+  color: var(--main-color);
+  padding: 1rem 0;
+}
+.packages .box-container .box .content .stars i {
+  font-size: 1.7rem;
+  /* color: var(--main-color); */
+  /* color: #333333; */
+  color: #ffd700;
+}
+.packages .box-container .box .content .price {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  padding: 1rem;
+}
+.packages .box-container .box .content .price span {
+  color: #666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}

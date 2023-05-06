@@ -109,3 +109,22 @@ function openImg6()
 {
     window.location.href="mad.html";
 }
+
+
+const form = document.getElementById('register-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  
+  const name = form.elements['name'].value;
+  const email = form.elements['email'].value;
+  const password = form.elements['password'].value;
+  
+  // Kiểm tra các giá trị nhập vào
+  if (name.trim() === '' || email.trim() === '' || password.trim() === '') {
+    alert('Please fill in all fields');
+    return;
+  }
+
+  alert('Đăng ký thành công!');
+});
